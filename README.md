@@ -1,0 +1,82 @@
+# コンテンツマスタリング完全パック LP
+
+GitHub Pagesでそのまま公開できる、静的HTML/CSS/JavaScript構成のランディングページです。
+
+## 構成
+
+```txt
+content_mastering_monitor_lp/
+├── index.html
+├── README.md
+├── .gitignore
+└── assets/
+    ├── css/
+    │   └── styles.css
+    ├── js/
+    │   └── main.js
+    └── img/
+        ├── top-note-thumb.jpg
+        ├── logo-badge.jpg
+        ├── proof-annual.jpg
+        ├── proof-1157100.jpg
+        ├── proof-1556000.jpg
+        ├── voice-month100.jpg
+        ├── voice-150man.jpg
+        ├── voice-250000.jpg
+        ├── proof-250000.jpg
+        ├── transfer-720720.jpg
+        ├── transfer-558320.jpg
+        └── transfer-491810.jpg
+```
+
+## 公開方法
+
+1. GitHubで新規リポジトリを作成
+2. ZIPを解凍して、中身をリポジトリ直下にアップロード
+3. GitHubの `Settings` → `Pages` を開く
+4. `Deploy from a branch` を選択
+5. Branchを `main`、フォルダを `/root` にして保存
+6. 表示されたURLを開いて確認
+
+## 申し込み導線
+
+LINEリンクは以下に設定済みです。
+
+```txt
+https://lin.ee/ym7fkWg
+```
+
+LP内では、申し込み時のキーワードとして以下を案内しています。
+
+```txt
+希望です
+```
+
+## 編集しやすい箇所
+
+### 価格変更
+
+`index.html` 内の以下を検索して変更してください。
+
+- `128,000円`
+- `19,800円`
+- `10名限定`
+- `希望です`
+
+### LINEリンク変更
+
+`index.html` 内の以下を検索して置き換えてください。
+
+```txt
+https://lin.ee/ym7fkWg
+```
+
+### 実績画像の差し替え
+
+`assets/img/` 内の画像を同名で差し替えると、HTMLを編集せずに差し替えできます。
+
+## 注意
+
+- 本LPは静的ページです。残り枠の自動カウントや決済機能はありません。
+- 募集枠や価格が変わる場合は、`index.html` を手動で更新してください。
+- LP内には成果保証を避ける注記を入れています。販売時は特商法表記、返金条件、提供内容を別途明確にしてください。
