@@ -545,3 +545,69 @@ h2 { margin: 0; font-size: clamp(29px, 4.5vw, 48px); line-height: 1.18; letter-s
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+
+/* ===== Final image display fix: no cropping for thumbnail/proof images ===== */
+.banner-frame img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  background: #050914;
+}
+
+.proof-card img,
+.proof-card.large img,
+.voice-card img,
+.proof-strip img {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+  background: #ffffff;
+}
+
+.proof-card img,
+.proof-card.large img {
+  padding: 12px;
+}
+
+.voice-card img {
+  padding: 12px;
+}
+
+.proof-strip img {
+  padding: 8px;
+}
+
+.proof-grid {
+  align-items: start;
+}
+
+.proof-card,
+.voice-card,
+.proof-strip figure {
+  height: auto;
+}
+
+@media (max-width: 980px) {
+  .proof-card img,
+  .proof-card.large img {
+    max-height: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .banner-frame img {
+    width: 100%;
+    height: auto;
+  }
+  .proof-card img,
+  .proof-card.large img,
+  .voice-card img,
+  .proof-strip img {
+    padding: 8px;
+  }
+}
